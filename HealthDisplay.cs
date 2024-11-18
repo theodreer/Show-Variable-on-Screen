@@ -1,19 +1,20 @@
 using UnityEngine;
 
-public class HealthDisplay : MonoBehaviour
+public class NameOfFile : MonoBehaviour
 {
-    public PlayerHealth1 playerhealth1; // Referência ao script com a variável
+    public ScritptWithVariable scriptwithvariable; // ReferÃªncia ao script com a variÃ¡vel // TROQUE ESTA MERDA PELO NOME CERTO
 
     void OnGUI()
     {
-        if (playerhealth1 != null)
+        if (scriptofvariable != null)
         {
-            // Exibe a variável score na tela
-            GUI.Label(new Rect(10, 10, 200, 20), "Health: " + playerhealth1.health);
+            // Exibe a variÃ¡vel desejada na tela
+            GUI.Label(new Rect(10, 10, 200, 20), "Variable: " + ScritptWithVariable.Variable);
+                                                        // Script Com o que vocÃª quer "." O que vocÃª quer.
         }
         else
         {
-            GUI.Label(new Rect(10, 10, 200, 20), "PlayerStats não atribuído!");
+            GUI.Label(new Rect(10, 10, 200, 20), "No Variable!");
         }
     }
 }
